@@ -10,13 +10,13 @@ container.setAttribute("class", "table-responsive");
 document.body.append(container);
 const perPage = document.createElement("div");
 perPage.setAttribute("class", "item-controller");
-perPage.innerHTML = ` <h5>Show data per page</h5>
-    <select  id="item-perpage">
-      <option class = "num-of-tr " value="10">10</option>
-      <option class = "num-of-tr " value="25">25</option>
-      <option class = "num-of-tr " value="35">35</option>
-      <option class = "num-of-tr " value="50">50</option>
-    </select>`;
+// perPage.innerHTML = ` <h5>Show data per page</h5>
+//     <select  id="item-perpage">
+//       <option class = "num-of-tr " value="10">10</option>
+//       <option class = "num-of-tr " value="25">25</option>
+//       <option class = "num-of-tr " value="35">35</option>
+//       <option class = "num-of-tr " value="50">50</option>
+//     </select>`;
 
 container.append(perPage);
 const tableContent = document.createElement("div");

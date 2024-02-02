@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: blanchedalmond;
+}
+#page-header {
+  width: 100vw;
+  background-color: cornflowerblue;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 10px 2px rgb(48, 45, 45);
+}
+h1 {
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: bolder;
+  filter: drop-shadow(4px 4px 5px rgb(26, 24, 24));
+}
+p {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.table-responsive {
+  width: min(1200px, 100% - 3rem);
+  /* width: 100%; */
+  margin-inline: auto;
+  /* width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#9c8888;
+  color: #fff;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+#table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgb(218, 150, 101);
+  /* padding: 2rem; */
+  color: #fff;
+  box-shadow: 2px 2px 30px 2px rgb(48, 45, 45),
+    4px 4px 20px 2px rgb(114, 111, 111);
+  font-size: 1.5rem;
+}
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+}
+
+th {
+  background: rgb(143, 69, 16);
+}
+tr:nth-of-type(2n) {
+  background: rgb(143, 69, 16, 0.1);
+}
+tr:hover {
+  background: rgba(161, 82, 25, 0.3);
+}
+
+#buttons {
+  padding: 2rem;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  padding: 0.7rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(197, 125, 73);
+  box-shadow: 2px 2px 20px rgb(63, 59, 59);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(37, 85, 216);
+}
+.active {
+  background-color: blueviolet;
+}
+.item-controller {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+select {
+  /* width: min(200px, 40px, 10vw);
+  padding-left: 2rem; */
+  width: 15vw;
+  padding: 0.5rem;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+h5 {
+  margin-right: 2rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+@media (max-width: 650px) {
+  td {
+    font-size: 1.3rem;
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: 10ch auto;
+
+    padding: 0.5rem 1rem;
+  }
+  td:first-child {
+    padding-top: 2rem;
+  }
+  td:last-child {
+    padding-bottom: 2rem;
+  }
+  th {
+    display: none;
+  }
+  td::before {
+    content: attr(data-cell);
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  #page-header {
+    display: block;
+  }
+  select {
+    width: 20vw;
+  }
+}

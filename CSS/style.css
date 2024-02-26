@@ -86,7 +86,7 @@ button {
 button:hover {
   background-color: rgb(37, 85, 216);
 }
-.active {
+.num-of-row.active {
   background-color: blueviolet;
 }
 .item-controller {
